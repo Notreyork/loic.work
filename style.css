@@ -171,6 +171,7 @@ section img {
 	display: block;
 	width: auto;
 	margin: 0 auto;
+	background-color: red;
 }
 
 .image-container {
