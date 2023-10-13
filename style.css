@@ -202,3 +202,13 @@ section img {
 	text-align: right;
 }
 
+
+
+@media only screen and (max-width: 30rem) {
+
+	main {
+		width: 100%;
+	}
+
+}
+
