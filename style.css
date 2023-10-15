@@ -171,16 +171,16 @@ section img {
 	display: block;
 	width: auto;
 	margin: 0 auto;
-	
 }
 
 .image-container {
-	
+	aspect-ratio : 1 / 1;
   	width:100%;
+  	object-fit: contain;
 }
 
 .image-container img {
-	height: auto;
+	height: 100%;
     width: 100%;
 	object-fit: contain;
 }
@@ -205,11 +205,16 @@ section img {
 
 
 
-@media only screen and (max-width: 35rem) {
+@media only screen and (max-width: 60rem) {
 
 	main {
 		width: 100%;
 	}
+
+	figure iframe {
+		height: 20rem;
+	}
+
 
 }
 
