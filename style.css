@@ -217,6 +217,10 @@ section img {
 		height: 20rem;
 	}
 
+	.overlay-content img {
+		width: 100%;
+
+	}
+
 
 }
-

@@ -13,6 +13,11 @@
 </head>
 <body>
 
+	<div class="overlay"></div>
+	<div class="overlay-content">
+		<img class="overlay-img" src="">
+	</div>
+
 	<main>
 
 		<header>
@@ -185,7 +190,7 @@
 
 			<div class="client">ny images™ (2023)</div>
 			<div class="details">
-			Graphic Design & Web Development
+			Image Curation, Graphic Design & Web Development
 			<br>
 			<a href="https://ny-images.com">view site</a>
 			</div>
@@ -200,6 +205,13 @@
   					</div>
 
 					<div class="swiper-wrapper">
+
+						<div class="swiper-slide">
+							<div class="image-container">
+								<img src="images/images.gif">
+							</div>
+							<div class="info"></div>
+						</div>
 
 						<div class="swiper-slide">
 							<div class="image-container">
@@ -409,6 +421,24 @@
 		},
 
 		});
+	</script>
+
+	<script   src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+
+	<script type="text/javascript">
+
+	$(".image-container img").click(function(){		                                        
+		$(".overlay-img").attr("src",$(this).prop('src'));
+	    $(".overlay").show();
+	    $(".overlay-content").show();
+	});
+
+	$(".overlay, .overlay-content").click(function(){
+	    $(".overlay-img").attr("src", "");
+	    $(".overlay").hide();
+	    $(".overlay-content").hide();
+	});
+		
 	</script>
 
 </body>
