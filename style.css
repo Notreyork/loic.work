@@ -94,16 +94,23 @@ span {
 	width: 100vw;
 	height: 100vh;
 
+	aspect-ratio : 1 / 1;
+  	object-fit: contain;
+
 }
 
 .overlay-content img {
 	position: absolute;
-	width: 45rem;
+	width: 25rem;
 	height: auto;
 
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%,-50%);
+
+	height: 100%;
+    width: 100%;
+	object-fit: contain;
 }
 
 main {
