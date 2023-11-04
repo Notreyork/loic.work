@@ -43,6 +43,7 @@ li {
 
 a {
 	color: #0027FF;
+	font-style: oblique;
 	font-weight: 400;
 	text-decoration: underline;
 	cursor: pointer;
@@ -114,7 +115,7 @@ span {
 
 main {
 	display: block;
-	width: 30rem;
+	width: 45rem;
 	padding: 1rem;
 	
 }
