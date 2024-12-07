@@ -44,7 +44,7 @@ li {
 }
 
 a {
-	color: #0027FF;
+	color: #0001FA;
 	font-style: normal;
 	font-weight: 400;
 	text-decoration: none;
@@ -53,13 +53,14 @@ a {
 }
 
 a:hover {
+	color: #0001FA;
 	text-decoration: none;
 
 
 }
 
 a:visited {
-	
+	color: #0001FA;
 
 }
 
@@ -117,7 +118,7 @@ span {
 
 main {
 	display: block;
-	width: 45rem;
+	width: 50rem;
 	padding: 1rem;
 	
 }
@@ -125,6 +126,29 @@ main {
 
 header {
 	margin-bottom: 4rem;
+}
+
+header div {
+	margin-bottom: 1rem;
+}
+
+.content {
+	display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 1rem;
+  align-items: center;
+}
+
+.content section {
+	aspect-ratio: 1 / 1;
+	width:100%;
+  object-fit: contain;
+}
+
+.content section img {
+	height: 100%;
+  width: 100%;
+	object-fit: contain;
 }
 
 section {
@@ -159,12 +183,11 @@ section img {
 	text-transform: none;
 	line-height: 1;
 	height: fit-content;
-	padding: 0.35rem 0.5rem;
-	margin-right: 0.5rem;
+	padding: 0;
+	margin-right: 1rem;
 	border-width: 1px;
-	border-style: solid;
-	border-color: #d8d8d8 #d1d1d1 #bababa;
-	border-radius: 3.5px;
+	border-color: transparent;
+	border-radius: 0;
 	cursor: pointer;
 
 	appearance: none;
@@ -174,7 +197,7 @@ section img {
 
 .button-prev:hover,
 .button-next:hover {
-	border-color: darkgre;
+	border-color: darkgrey;
 }
 
 .swipe {
@@ -245,6 +268,15 @@ section img {
 .info {
 	font-size: 10px;
 	text-align: right;
+}
+
+footer {
+
+}
+
+footer ul li div {
+	display: inline-block;
+	margin-right: 1rem;
 }
 
 
