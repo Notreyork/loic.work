@@ -274,6 +274,15 @@ footer {
 
 }
 
+footer div {
+	margin-bottom: 0.5rem;
+}
+
+footer img {
+	height: 1rem;
+	width: auto;
+}
+
 footer ul li div {
 	display: inline-block;
 	margin-right: 1rem;
